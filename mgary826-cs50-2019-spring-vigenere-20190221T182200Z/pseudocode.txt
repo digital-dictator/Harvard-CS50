@@ -1,0 +1,14 @@
+Make sure that argc only has 2 inputs, the key and argv[1] which is the plaintext. 
+Create counter for iterating over the key word
+Get the key number from the key word using the shift function            
+Declare Plaintext       
+Run through each of the char in the array and adds the key to each of the elements
+If Lowercase
+    Print statement that takes the text[i] and subtracts it by 'a' which is 97, add the key.  But we can't just leave it like that because then it once text[i] == 'z'  it will continue with the ascii until it gets to 123, the { key.  Instead we want to loop it back to 'a' so we have to %26 and add 'a' again to get it to loop.     
+     Move j to next line in key          
+ If Uppercase
+     Print statement takes the text[i] and subtracts it by 'A' which is 65, adds the key.  But we can't just leave it like that because then it once text[i] == 'Z'  it will continue with the ascii until it gets to 91, the [ key.  Instead we want to loop it back to 'A' so we have to %26 and add 'A' again to get it to loop.
+     Move j to next line in key
+     Print text such as spaces that don't interfer and loop
+     Bring j back to 0 which is the beginning of the key when the key runs out of numbers
+Print new line        
